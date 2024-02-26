@@ -1,0 +1,22 @@
+[2023-06-23 21:59:55,968] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: assignment.task_two 2023-06-23T21:30:32.912877+00:00 [failed]>
+[2023-06-23 21:59:56,031] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: assignment.task_two 2023-06-23T21:30:32.912877+00:00 [failed]>
+[2023-06-23 21:59:56,034] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-23 21:59:56,036] {taskinstance.py:1088} INFO - Starting attempt 2 of 1
+[2023-06-23 21:59:56,037] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-23 21:59:56,096] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): task_two> on 2023-06-23T21:30:32.912877+00:00
+[2023-06-23 21:59:56,105] {standard_task_runner.py:52} INFO - Started process 5913 to run task
+[2023-06-23 21:59:56,125] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'assignment', 'task_two', '2023-06-23T21:30:32.912877+00:00', '--job-id', '19', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/assignment.py', '--cfg-path', '/tmp/tmpeqow2gav', '--error-file', '/tmp/tmptcjv5v5r']
+[2023-06-23 21:59:56,129] {standard_task_runner.py:77} INFO - Job 19: Subtask task_two
+[2023-06-23 21:59:56,283] {logging_mixin.py:104} INFO - Running <TaskInstance: assignment.task_two 2023-06-23T21:30:32.912877+00:00 [running]> on host 7f7a4865b07a
+[2023-06-23 21:59:56,452] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=assignment
+AIRFLOW_CTX_TASK_ID=task_two
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-23T21:30:32.912877+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-06-23T21:30:32.912877+00:00
+[2023-06-23 21:59:56,506] {python.py:151} INFO - Done. Returned value was: None
+[2023-06-23 21:59:56,546] {taskinstance.py:1211} INFO - Marking task as SUCCESS. dag_id=assignment, task_id=task_two, execution_date=20230623T213032, start_date=20230623T215955, end_date=20230623T215956
+[2023-06-23 21:59:56,647] {taskinstance.py:1265} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-06-23 21:59:56,718] {local_task_job.py:151} INFO - Task exited with return code 0

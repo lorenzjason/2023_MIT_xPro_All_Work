@@ -1,0 +1,22 @@
+[2023-05-24 21:51:21,486] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: python_square_operator.square 2023-05-24T21:51:19.333651+00:00 [queued]>
+[2023-05-24 21:51:21,520] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: python_square_operator.square 2023-05-24T21:51:19.333651+00:00 [queued]>
+[2023-05-24 21:51:21,522] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-24 21:51:21,523] {taskinstance.py:1088} INFO - Starting attempt 1 of 1
+[2023-05-24 21:51:21,524] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2023-05-24 21:51:21,557] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): square> on 2023-05-24T21:51:19.333651+00:00
+[2023-05-24 21:51:21,563] {standard_task_runner.py:52} INFO - Started process 1749 to run task
+[2023-05-24 21:51:21,574] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'python_square_operator', 'square', '2023-05-24T21:51:19.333651+00:00', '--job-id', '6', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/module19_assignment.py', '--cfg-path', '/tmp/tmptug6ww0m', '--error-file', '/tmp/tmpn5t9kwlf']
+[2023-05-24 21:51:21,577] {standard_task_runner.py:77} INFO - Job 6: Subtask square
+[2023-05-24 21:51:21,677] {logging_mixin.py:104} INFO - Running <TaskInstance: python_square_operator.square 2023-05-24T21:51:19.333651+00:00 [running]> on host f66eba1d7275
+[2023-05-24 21:51:21,792] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=python_square_operator
+AIRFLOW_CTX_TASK_ID=square
+AIRFLOW_CTX_EXECUTION_DATE=2023-05-24T21:51:19.333651+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-05-24T21:51:19.333651+00:00
+[2023-05-24 21:51:21,796] {python.py:151} INFO - Done. Returned value was: 144
+[2023-05-24 21:51:21,865] {taskinstance.py:1211} INFO - Marking task as SUCCESS. dag_id=python_square_operator, task_id=square, execution_date=20230524T215119, start_date=20230524T215121, end_date=20230524T215121
+[2023-05-24 21:51:21,932] {taskinstance.py:1265} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-05-24 21:51:21,953] {local_task_job.py:151} INFO - Task exited with return code 0

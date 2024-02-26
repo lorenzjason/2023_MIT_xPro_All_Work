@@ -1,0 +1,256 @@
+[2023-06-23 21:01:30,744] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: assignment.task_one 2023-06-22T00:00:00+00:00 [queued]>
+[2023-06-23 21:01:30,819] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: assignment.task_one 2023-06-22T00:00:00+00:00 [queued]>
+[2023-06-23 21:01:30,822] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-23 21:01:30,824] {taskinstance.py:1088} INFO - Starting attempt 1 of 1
+[2023-06-23 21:01:30,838] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-23 21:01:30,920] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): task_one> on 2023-06-22T00:00:00+00:00
+[2023-06-23 21:01:30,931] {standard_task_runner.py:52} INFO - Started process 1988 to run task
+[2023-06-23 21:01:30,948] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'assignment', 'task_one', '2023-06-22T00:00:00+00:00', '--job-id', '11', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/assignment.py', '--cfg-path', '/tmp/tmp56tyaztw', '--error-file', '/tmp/tmpv8va8skb']
+[2023-06-23 21:01:30,952] {standard_task_runner.py:77} INFO - Job 11: Subtask task_one
+[2023-06-23 21:01:31,126] {logging_mixin.py:104} INFO - Running <TaskInstance: assignment.task_one 2023-06-22T00:00:00+00:00 [running]> on host 7f7a4865b07a
+[2023-06-23 21:01:31,308] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=assignment
+AIRFLOW_CTX_TASK_ID=task_one
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-22T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-22T00:00:00+00:00
+[2023-06-23 21:01:31,539] {logging_mixin.py:104} INFO - wrote file: m1a.html
+[2023-06-23 21:01:31,540] {logging_mixin.py:104} INFO - pulled: m1a.html
+[2023-06-23 21:01:31,542] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:01:46,725] {logging_mixin.py:104} INFO - wrote file: m1b.html
+[2023-06-23 21:01:46,727] {logging_mixin.py:104} INFO - pulled: m1b.html
+[2023-06-23 21:01:46,728] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:02:01,948] {logging_mixin.py:104} INFO - wrote file: m1c.html
+[2023-06-23 21:02:01,950] {logging_mixin.py:104} INFO - pulled: m1c.html
+[2023-06-23 21:02:01,952] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:02:17,169] {logging_mixin.py:104} INFO - wrote file: m2a.html
+[2023-06-23 21:02:17,171] {logging_mixin.py:104} INFO - pulled: m2a.html
+[2023-06-23 21:02:17,173] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:02:32,711] {logging_mixin.py:104} INFO - wrote file: m2b.html
+[2023-06-23 21:02:32,715] {logging_mixin.py:104} INFO - pulled: m2b.html
+[2023-06-23 21:02:32,717] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:02:47,945] {logging_mixin.py:104} INFO - wrote file: m2c.html
+[2023-06-23 21:02:47,947] {logging_mixin.py:104} INFO - pulled: m2c.html
+[2023-06-23 21:02:47,948] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:03:03,176] {logging_mixin.py:104} INFO - wrote file: m3a.html
+[2023-06-23 21:03:03,178] {logging_mixin.py:104} INFO - pulled: m3a.html
+[2023-06-23 21:03:03,180] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:03:18,393] {logging_mixin.py:104} INFO - wrote file: m3b.html
+[2023-06-23 21:03:18,395] {logging_mixin.py:104} INFO - pulled: m3b.html
+[2023-06-23 21:03:18,396] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:03:33,589] {logging_mixin.py:104} INFO - wrote file: m4a.html
+[2023-06-23 21:03:33,591] {logging_mixin.py:104} INFO - pulled: m4a.html
+[2023-06-23 21:03:33,593] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:03:48,907] {logging_mixin.py:104} INFO - wrote file: m4b.html
+[2023-06-23 21:03:48,910] {logging_mixin.py:104} INFO - pulled: m4b.html
+[2023-06-23 21:03:48,911] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:04:04,374] {logging_mixin.py:104} INFO - wrote file: m4c.html
+[2023-06-23 21:04:04,377] {logging_mixin.py:104} INFO - pulled: m4c.html
+[2023-06-23 21:04:04,380] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:04:19,578] {logging_mixin.py:104} INFO - wrote file: m4d.html
+[2023-06-23 21:04:19,580] {logging_mixin.py:104} INFO - pulled: m4d.html
+[2023-06-23 21:04:19,581] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:04:34,774] {logging_mixin.py:104} INFO - wrote file: m4e.html
+[2023-06-23 21:04:34,777] {logging_mixin.py:104} INFO - pulled: m4e.html
+[2023-06-23 21:04:34,778] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:04:50,142] {logging_mixin.py:104} INFO - wrote file: m4f.html
+[2023-06-23 21:04:50,145] {logging_mixin.py:104} INFO - pulled: m4f.html
+[2023-06-23 21:04:50,147] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:05:05,299] {logging_mixin.py:104} INFO - wrote file: m4g.html
+[2023-06-23 21:05:05,301] {logging_mixin.py:104} INFO - pulled: m4g.html
+[2023-06-23 21:05:05,302] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:05:20,527] {logging_mixin.py:104} INFO - wrote file: m5a.html
+[2023-06-23 21:05:20,529] {logging_mixin.py:104} INFO - pulled: m5a.html
+[2023-06-23 21:05:20,531] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:05:35,721] {logging_mixin.py:104} INFO - wrote file: m5b.html
+[2023-06-23 21:05:35,724] {logging_mixin.py:104} INFO - pulled: m5b.html
+[2023-06-23 21:05:35,725] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:05:50,960] {logging_mixin.py:104} INFO - wrote file: m6a.html
+[2023-06-23 21:05:50,963] {logging_mixin.py:104} INFO - pulled: m6a.html
+[2023-06-23 21:05:50,967] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:06:06,177] {logging_mixin.py:104} INFO - wrote file: m6b.html
+[2023-06-23 21:06:06,180] {logging_mixin.py:104} INFO - pulled: m6b.html
+[2023-06-23 21:06:06,181] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:06:21,407] {logging_mixin.py:104} INFO - wrote file: m6c.html
+[2023-06-23 21:06:21,409] {logging_mixin.py:104} INFO - pulled: m6c.html
+[2023-06-23 21:06:21,411] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:06:36,635] {logging_mixin.py:104} INFO - wrote file: m7a.html
+[2023-06-23 21:06:36,637] {logging_mixin.py:104} INFO - pulled: m7a.html
+[2023-06-23 21:06:36,639] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:06:51,869] {logging_mixin.py:104} INFO - wrote file: m8a.html
+[2023-06-23 21:06:51,872] {logging_mixin.py:104} INFO - pulled: m8a.html
+[2023-06-23 21:06:51,874] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:07:07,084] {logging_mixin.py:104} INFO - wrote file: m8b.html
+[2023-06-23 21:07:07,088] {logging_mixin.py:104} INFO - pulled: m8b.html
+[2023-06-23 21:07:07,092] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:07:22,291] {logging_mixin.py:104} INFO - wrote file: m9a.html
+[2023-06-23 21:07:22,293] {logging_mixin.py:104} INFO - pulled: m9a.html
+[2023-06-23 21:07:22,295] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:07:37,526] {logging_mixin.py:104} INFO - wrote file: m9b.html
+[2023-06-23 21:07:37,529] {logging_mixin.py:104} INFO - pulled: m9b.html
+[2023-06-23 21:07:37,531] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:07:52,836] {logging_mixin.py:104} INFO - wrote file: m10a.html
+[2023-06-23 21:07:52,838] {logging_mixin.py:104} INFO - pulled: m10a.html
+[2023-06-23 21:07:52,840] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:08:08,080] {logging_mixin.py:104} INFO - wrote file: m10b.html
+[2023-06-23 21:08:08,082] {logging_mixin.py:104} INFO - pulled: m10b.html
+[2023-06-23 21:08:08,083] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:08:23,223] {taskinstance.py:1501} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1157, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1331, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1361, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/assignment.py", line 83, in catalog
+    urldata = pull(url)
+  File "/opt/airflow/dags/assignment.py", line 19, in pull
+    response = urllib.request.urlopen(url).read()
+  File "/usr/local/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/local/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/local/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/local/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/local/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+[2023-06-23 21:08:23,252] {taskinstance.py:1551} INFO - Marking task as FAILED. dag_id=assignment, task_id=task_one, execution_date=20230622T000000, start_date=20230623T210130, end_date=20230623T210823
+[2023-06-23 21:08:23,377] {local_task_job.py:151} INFO - Task exited with return code 1
+[2023-06-23 21:43:43,591] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: assignment.task_one 2023-06-22T00:00:00+00:00 [queued]>
+[2023-06-23 21:43:43,724] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: assignment.task_one 2023-06-22T00:00:00+00:00 [queued]>
+[2023-06-23 21:43:43,733] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-23 21:43:43,741] {taskinstance.py:1088} INFO - Starting attempt 1 of 1
+[2023-06-23 21:43:43,751] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-23 21:43:43,861] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): task_one> on 2023-06-22T00:00:00+00:00
+[2023-06-23 21:43:43,881] {standard_task_runner.py:52} INFO - Started process 4644 to run task
+[2023-06-23 21:43:43,905] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'assignment', 'task_one', '2023-06-22T00:00:00+00:00', '--job-id', '16', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/assignment.py', '--cfg-path', '/tmp/tmpfr3duwll', '--error-file', '/tmp/tmpzc2a4hw_']
+[2023-06-23 21:43:43,913] {standard_task_runner.py:77} INFO - Job 16: Subtask task_one
+[2023-06-23 21:43:44,097] {logging_mixin.py:104} INFO - Running <TaskInstance: assignment.task_one 2023-06-22T00:00:00+00:00 [running]> on host 7f7a4865b07a
+[2023-06-23 21:43:44,302] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=assignment
+AIRFLOW_CTX_TASK_ID=task_one
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-22T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-22T00:00:00+00:00
+[2023-06-23 21:43:44,739] {logging_mixin.py:104} INFO - wrote file: m1a.html
+[2023-06-23 21:43:44,741] {logging_mixin.py:104} INFO - pulled: m1a.html
+[2023-06-23 21:43:44,743] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:43:59,937] {logging_mixin.py:104} INFO - wrote file: m1b.html
+[2023-06-23 21:43:59,940] {logging_mixin.py:104} INFO - pulled: m1b.html
+[2023-06-23 21:43:59,941] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:44:15,373] {logging_mixin.py:104} INFO - wrote file: m1c.html
+[2023-06-23 21:44:15,376] {logging_mixin.py:104} INFO - pulled: m1c.html
+[2023-06-23 21:44:15,378] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:44:30,613] {logging_mixin.py:104} INFO - wrote file: m2a.html
+[2023-06-23 21:44:30,615] {logging_mixin.py:104} INFO - pulled: m2a.html
+[2023-06-23 21:44:30,616] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:44:45,861] {logging_mixin.py:104} INFO - wrote file: m2b.html
+[2023-06-23 21:44:45,864] {logging_mixin.py:104} INFO - pulled: m2b.html
+[2023-06-23 21:44:45,865] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:45:01,288] {logging_mixin.py:104} INFO - wrote file: m2c.html
+[2023-06-23 21:45:01,291] {logging_mixin.py:104} INFO - pulled: m2c.html
+[2023-06-23 21:45:01,292] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:45:16,480] {logging_mixin.py:104} INFO - wrote file: m3b.html
+[2023-06-23 21:45:16,483] {logging_mixin.py:104} INFO - pulled: m3b.html
+[2023-06-23 21:45:16,485] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:45:31,846] {logging_mixin.py:104} INFO - wrote file: m4a.html
+[2023-06-23 21:45:31,850] {logging_mixin.py:104} INFO - pulled: m4a.html
+[2023-06-23 21:45:31,851] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:45:47,054] {logging_mixin.py:104} INFO - wrote file: m4b.html
+[2023-06-23 21:45:47,056] {logging_mixin.py:104} INFO - pulled: m4b.html
+[2023-06-23 21:45:47,057] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:46:02,447] {logging_mixin.py:104} INFO - wrote file: m4c.html
+[2023-06-23 21:46:02,450] {logging_mixin.py:104} INFO - pulled: m4c.html
+[2023-06-23 21:46:02,451] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:46:17,651] {logging_mixin.py:104} INFO - wrote file: m4d.html
+[2023-06-23 21:46:17,654] {logging_mixin.py:104} INFO - pulled: m4d.html
+[2023-06-23 21:46:17,656] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:46:32,863] {logging_mixin.py:104} INFO - wrote file: m4e.html
+[2023-06-23 21:46:32,865] {logging_mixin.py:104} INFO - pulled: m4e.html
+[2023-06-23 21:46:32,867] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:46:48,072] {logging_mixin.py:104} INFO - wrote file: m4f.html
+[2023-06-23 21:46:48,075] {logging_mixin.py:104} INFO - pulled: m4f.html
+[2023-06-23 21:46:48,077] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:47:03,269] {logging_mixin.py:104} INFO - wrote file: m4g.html
+[2023-06-23 21:47:03,271] {logging_mixin.py:104} INFO - pulled: m4g.html
+[2023-06-23 21:47:03,273] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:47:18,491] {logging_mixin.py:104} INFO - wrote file: m5a.html
+[2023-06-23 21:47:18,497] {logging_mixin.py:104} INFO - pulled: m5a.html
+[2023-06-23 21:47:18,500] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:47:33,844] {logging_mixin.py:104} INFO - wrote file: m5b.html
+[2023-06-23 21:47:33,848] {logging_mixin.py:104} INFO - pulled: m5b.html
+[2023-06-23 21:47:33,850] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:47:49,297] {logging_mixin.py:104} INFO - wrote file: m6a.html
+[2023-06-23 21:47:49,300] {logging_mixin.py:104} INFO - pulled: m6a.html
+[2023-06-23 21:47:49,302] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:48:04,516] {logging_mixin.py:104} INFO - wrote file: m6b.html
+[2023-06-23 21:48:04,518] {logging_mixin.py:104} INFO - pulled: m6b.html
+[2023-06-23 21:48:04,520] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:48:19,734] {logging_mixin.py:104} INFO - wrote file: m6c.html
+[2023-06-23 21:48:19,737] {logging_mixin.py:104} INFO - pulled: m6c.html
+[2023-06-23 21:48:19,738] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:48:35,248] {logging_mixin.py:104} INFO - wrote file: m7a.html
+[2023-06-23 21:48:35,251] {logging_mixin.py:104} INFO - pulled: m7a.html
+[2023-06-23 21:48:35,252] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:48:50,481] {logging_mixin.py:104} INFO - wrote file: m8a.html
+[2023-06-23 21:48:50,484] {logging_mixin.py:104} INFO - pulled: m8a.html
+[2023-06-23 21:48:50,486] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:49:05,714] {logging_mixin.py:104} INFO - wrote file: m8b.html
+[2023-06-23 21:49:05,719] {logging_mixin.py:104} INFO - pulled: m8b.html
+[2023-06-23 21:49:05,721] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:49:20,915] {logging_mixin.py:104} INFO - wrote file: m9a.html
+[2023-06-23 21:49:20,920] {logging_mixin.py:104} INFO - pulled: m9a.html
+[2023-06-23 21:49:20,922] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:49:36,103] {logging_mixin.py:104} INFO - wrote file: m9b.html
+[2023-06-23 21:49:36,105] {logging_mixin.py:104} INFO - pulled: m9b.html
+[2023-06-23 21:49:36,106] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:49:51,358] {logging_mixin.py:104} INFO - wrote file: m10a.html
+[2023-06-23 21:49:51,361] {logging_mixin.py:104} INFO - pulled: m10a.html
+[2023-06-23 21:49:51,362] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:50:06,555] {logging_mixin.py:104} INFO - wrote file: m10b.html
+[2023-06-23 21:50:06,558] {logging_mixin.py:104} INFO - pulled: m10b.html
+[2023-06-23 21:50:06,559] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-23 21:50:21,693] {taskinstance.py:1501} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1157, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1331, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1361, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/assignment.py", line 82, in catalog
+  File "/opt/airflow/dags/assignment.py", line 19, in pull
+    response = urllib.request.urlopen(url).read()
+  File "/usr/local/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/local/lib/python3.6/urllib/request.py", line 532, in open
+    response = meth(req, response)
+  File "/usr/local/lib/python3.6/urllib/request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/local/lib/python3.6/urllib/request.py", line 570, in error
+    return self._call_chain(*args)
+  File "/usr/local/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/local/lib/python3.6/urllib/request.py", line 650, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+[2023-06-23 21:50:21,718] {taskinstance.py:1551} INFO - Marking task as FAILED. dag_id=assignment, task_id=task_one, execution_date=20230622T000000, start_date=20230623T214343, end_date=20230623T215021
+[2023-06-23 21:50:21,827] {local_task_job.py:151} INFO - Task exited with return code 1

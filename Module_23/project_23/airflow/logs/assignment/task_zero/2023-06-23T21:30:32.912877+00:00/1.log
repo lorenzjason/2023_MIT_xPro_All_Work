@@ -1,0 +1,29 @@
+[2023-06-23 21:37:38,809] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: assignment.task_zero 2023-06-23T21:30:32.912877+00:00 [queued]>
+[2023-06-23 21:37:38,901] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: assignment.task_zero 2023-06-23T21:30:32.912877+00:00 [queued]>
+[2023-06-23 21:37:38,905] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-23 21:37:38,908] {taskinstance.py:1088} INFO - Starting attempt 1 of 3
+[2023-06-23 21:37:38,911] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-23 21:37:38,989] {taskinstance.py:1107} INFO - Executing <Task(BashOperator): task_zero> on 2023-06-23T21:30:32.912877+00:00
+[2023-06-23 21:37:39,003] {standard_task_runner.py:52} INFO - Started process 4125 to run task
+[2023-06-23 21:37:39,028] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'assignment', 'task_zero', '2023-06-23T21:30:32.912877+00:00', '--job-id', '13', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/assignment.py', '--cfg-path', '/tmp/tmppo91dl8_', '--error-file', '/tmp/tmptr0peeja']
+[2023-06-23 21:37:39,034] {standard_task_runner.py:77} INFO - Job 13: Subtask task_zero
+[2023-06-23 21:37:39,251] {logging_mixin.py:104} INFO - Running <TaskInstance: assignment.task_zero 2023-06-23T21:30:32.912877+00:00 [running]> on host 7f7a4865b07a
+[2023-06-23 21:37:39,527] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=assignment
+AIRFLOW_CTX_TASK_ID=task_zero
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-23T21:30:32.912877+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-06-23T21:30:32.912877+00:00
+[2023-06-23 21:37:39,537] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2023-06-23 21:37:39,542] {subprocess.py:63} INFO - Running command: ['bash', '-c', 'pip install beautifulsoup4']
+[2023-06-23 21:37:39,580] {subprocess.py:75} INFO - Output:
+[2023-06-23 21:37:49,569] {subprocess.py:79} INFO - Defaulting to user installation because normal site-packages is not writeable
+[2023-06-23 21:37:50,517] {subprocess.py:79} INFO - Requirement already satisfied: beautifulsoup4 in /home/***/.local/lib/python3.6/site-packages (4.12.2)
+[2023-06-23 21:37:50,560] {subprocess.py:79} INFO - Requirement already satisfied: soupsieve>1.2 in /home/***/.local/lib/python3.6/site-packages (from beautifulsoup4) (2.3.2.post1)
+[2023-06-23 21:38:35,484] {subprocess.py:83} INFO - Command exited with return code 0
+[2023-06-23 21:38:35,577] {taskinstance.py:1211} INFO - Marking task as SUCCESS. dag_id=assignment, task_id=task_zero, execution_date=20230623T213032, start_date=20230623T213738, end_date=20230623T213835
+[2023-06-23 21:38:35,685] {taskinstance.py:1265} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-06-23 21:38:35,745] {local_task_job.py:151} INFO - Task exited with return code 0

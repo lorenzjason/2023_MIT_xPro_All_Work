@@ -1,0 +1,157 @@
+[2023-06-24 00:00:36,399] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: assignment.task_one 2023-06-23T00:00:00+00:00 [queued]>
+[2023-06-24 00:00:36,430] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: assignment.task_one 2023-06-23T00:00:00+00:00 [queued]>
+[2023-06-24 00:00:36,432] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-24 00:00:36,433] {taskinstance.py:1088} INFO - Starting attempt 1 of 1
+[2023-06-24 00:00:36,433] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-24 00:00:36,463] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): task_one> on 2023-06-23T00:00:00+00:00
+[2023-06-24 00:00:36,468] {standard_task_runner.py:52} INFO - Started process 15384 to run task
+[2023-06-24 00:00:36,482] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'assignment', 'task_one', '2023-06-23T00:00:00+00:00', '--job-id', '36', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/assignment.py', '--cfg-path', '/tmp/tmppzedegxn', '--error-file', '/tmp/tmpcettst2b']
+[2023-06-24 00:00:36,485] {standard_task_runner.py:77} INFO - Job 36: Subtask task_one
+[2023-06-24 00:00:36,611] {logging_mixin.py:104} INFO - Running <TaskInstance: assignment.task_one 2023-06-23T00:00:00+00:00 [running]> on host 7f7a4865b07a
+[2023-06-24 00:00:36,742] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=assignment
+AIRFLOW_CTX_TASK_ID=task_one
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-23T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-06-23T00:00:00+00:00
+[2023-06-24 00:00:37,114] {logging_mixin.py:104} INFO - wrote file: m1a.html
+[2023-06-24 00:00:37,115] {logging_mixin.py:104} INFO - pulled: m1a.html
+[2023-06-24 00:00:37,116] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:00:52,283] {logging_mixin.py:104} INFO - wrote file: m1b.html
+[2023-06-24 00:00:52,284] {logging_mixin.py:104} INFO - pulled: m1b.html
+[2023-06-24 00:00:52,285] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:01:07,505] {logging_mixin.py:104} INFO - wrote file: m1c.html
+[2023-06-24 00:01:07,507] {logging_mixin.py:104} INFO - pulled: m1c.html
+[2023-06-24 00:01:07,507] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:01:22,951] {logging_mixin.py:104} INFO - wrote file: m2a.html
+[2023-06-24 00:01:22,953] {logging_mixin.py:104} INFO - pulled: m2a.html
+[2023-06-24 00:01:22,954] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:01:38,194] {logging_mixin.py:104} INFO - wrote file: m2b.html
+[2023-06-24 00:01:38,196] {logging_mixin.py:104} INFO - pulled: m2b.html
+[2023-06-24 00:01:38,197] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:01:53,410] {logging_mixin.py:104} INFO - wrote file: m2c.html
+[2023-06-24 00:01:53,412] {logging_mixin.py:104} INFO - pulled: m2c.html
+[2023-06-24 00:01:53,413] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:02:08,603] {logging_mixin.py:104} INFO - wrote file: m3b.html
+[2023-06-24 00:02:08,605] {logging_mixin.py:104} INFO - pulled: m3b.html
+[2023-06-24 00:02:08,606] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:02:23,968] {logging_mixin.py:104} INFO - wrote file: m4a.html
+[2023-06-24 00:02:23,970] {logging_mixin.py:104} INFO - pulled: m4a.html
+[2023-06-24 00:02:23,971] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:02:39,281] {logging_mixin.py:104} INFO - wrote file: m4b.html
+[2023-06-24 00:02:39,284] {logging_mixin.py:104} INFO - pulled: m4b.html
+[2023-06-24 00:02:39,286] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:02:54,516] {logging_mixin.py:104} INFO - wrote file: m4c.html
+[2023-06-24 00:02:54,518] {logging_mixin.py:104} INFO - pulled: m4c.html
+[2023-06-24 00:02:54,519] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:03:09,714] {logging_mixin.py:104} INFO - wrote file: m4d.html
+[2023-06-24 00:03:09,717] {logging_mixin.py:104} INFO - pulled: m4d.html
+[2023-06-24 00:03:09,720] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:03:24,950] {logging_mixin.py:104} INFO - wrote file: m4e.html
+[2023-06-24 00:03:24,952] {logging_mixin.py:104} INFO - pulled: m4e.html
+[2023-06-24 00:03:24,952] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:03:40,137] {logging_mixin.py:104} INFO - wrote file: m4f.html
+[2023-06-24 00:03:40,139] {logging_mixin.py:104} INFO - pulled: m4f.html
+[2023-06-24 00:03:40,140] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:03:55,298] {logging_mixin.py:104} INFO - wrote file: m4g.html
+[2023-06-24 00:03:55,299] {logging_mixin.py:104} INFO - pulled: m4g.html
+[2023-06-24 00:03:55,300] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:04:10,636] {logging_mixin.py:104} INFO - wrote file: m5a.html
+[2023-06-24 00:04:10,638] {logging_mixin.py:104} INFO - pulled: m5a.html
+[2023-06-24 00:04:10,639] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:04:25,859] {logging_mixin.py:104} INFO - wrote file: m5b.html
+[2023-06-24 00:04:25,861] {logging_mixin.py:104} INFO - pulled: m5b.html
+[2023-06-24 00:04:25,862] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:04:41,074] {logging_mixin.py:104} INFO - wrote file: m6a.html
+[2023-06-24 00:04:41,076] {logging_mixin.py:104} INFO - pulled: m6a.html
+[2023-06-24 00:04:41,077] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:04:56,445] {logging_mixin.py:104} INFO - wrote file: m6b.html
+[2023-06-24 00:04:56,450] {logging_mixin.py:104} INFO - pulled: m6b.html
+[2023-06-24 00:04:56,453] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:05:11,684] {logging_mixin.py:104} INFO - wrote file: m6c.html
+[2023-06-24 00:05:11,687] {logging_mixin.py:104} INFO - pulled: m6c.html
+[2023-06-24 00:05:11,688] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:05:27,243] {logging_mixin.py:104} INFO - wrote file: m7a.html
+[2023-06-24 00:05:27,245] {logging_mixin.py:104} INFO - pulled: m7a.html
+[2023-06-24 00:05:27,246] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:05:42,457] {logging_mixin.py:104} INFO - wrote file: m8a.html
+[2023-06-24 00:05:42,459] {logging_mixin.py:104} INFO - pulled: m8a.html
+[2023-06-24 00:05:42,460] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:05:57,751] {logging_mixin.py:104} INFO - wrote file: m8b.html
+[2023-06-24 00:05:57,753] {logging_mixin.py:104} INFO - pulled: m8b.html
+[2023-06-24 00:05:57,754] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:06:12,987] {logging_mixin.py:104} INFO - wrote file: m9a.html
+[2023-06-24 00:06:12,995] {logging_mixin.py:104} INFO - pulled: m9a.html
+[2023-06-24 00:06:12,998] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:06:28,217] {logging_mixin.py:104} INFO - wrote file: m9b.html
+[2023-06-24 00:06:28,218] {logging_mixin.py:104} INFO - pulled: m9b.html
+[2023-06-24 00:06:28,219] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:06:43,456] {logging_mixin.py:104} INFO - wrote file: m10a.html
+[2023-06-24 00:06:43,458] {logging_mixin.py:104} INFO - pulled: m10a.html
+[2023-06-24 00:06:43,460] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:06:58,791] {logging_mixin.py:104} INFO - wrote file: m10b.html
+[2023-06-24 00:06:58,794] {logging_mixin.py:104} INFO - pulled: m10b.html
+[2023-06-24 00:06:58,795] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:07:14,235] {logging_mixin.py:104} INFO - wrote file: m11a.html
+[2023-06-24 00:07:14,243] {logging_mixin.py:104} INFO - pulled: m11a.html
+[2023-06-24 00:07:14,246] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:07:29,439] {logging_mixin.py:104} INFO - wrote file: m11b.html
+[2023-06-24 00:07:29,440] {logging_mixin.py:104} INFO - pulled: m11b.html
+[2023-06-24 00:07:29,441] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:07:44,688] {logging_mixin.py:104} INFO - wrote file: m11c.html
+[2023-06-24 00:07:44,689] {logging_mixin.py:104} INFO - pulled: m11c.html
+[2023-06-24 00:07:44,690] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:07:59,903] {logging_mixin.py:104} INFO - wrote file: m12a.html
+[2023-06-24 00:07:59,906] {logging_mixin.py:104} INFO - pulled: m12a.html
+[2023-06-24 00:07:59,907] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:08:15,089] {logging_mixin.py:104} INFO - wrote file: m12b.html
+[2023-06-24 00:08:15,091] {logging_mixin.py:104} INFO - pulled: m12b.html
+[2023-06-24 00:08:15,092] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:08:30,308] {logging_mixin.py:104} INFO - wrote file: m12c.html
+[2023-06-24 00:08:30,310] {logging_mixin.py:104} INFO - pulled: m12c.html
+[2023-06-24 00:08:30,311] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:08:45,529] {logging_mixin.py:104} INFO - wrote file: m14a.html
+[2023-06-24 00:08:45,530] {logging_mixin.py:104} INFO - pulled: m14a.html
+[2023-06-24 00:08:45,531] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:09:00,867] {logging_mixin.py:104} INFO - wrote file: m14b.html
+[2023-06-24 00:09:00,869] {logging_mixin.py:104} INFO - pulled: m14b.html
+[2023-06-24 00:09:00,870] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:09:16,155] {logging_mixin.py:104} INFO - wrote file: m15a.html
+[2023-06-24 00:09:16,162] {logging_mixin.py:104} INFO - pulled: m15a.html
+[2023-06-24 00:09:16,165] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:09:31,492] {logging_mixin.py:104} INFO - wrote file: m15b.html
+[2023-06-24 00:09:31,494] {logging_mixin.py:104} INFO - pulled: m15b.html
+[2023-06-24 00:09:31,495] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:09:47,017] {logging_mixin.py:104} INFO - wrote file: m15c.html
+[2023-06-24 00:09:47,019] {logging_mixin.py:104} INFO - pulled: m15c.html
+[2023-06-24 00:09:47,020] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:10:02,442] {logging_mixin.py:104} INFO - wrote file: m16a.html
+[2023-06-24 00:10:02,444] {logging_mixin.py:104} INFO - pulled: m16a.html
+[2023-06-24 00:10:02,444] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:10:17,683] {logging_mixin.py:104} INFO - wrote file: m16b.html
+[2023-06-24 00:10:17,688] {logging_mixin.py:104} INFO - pulled: m16b.html
+[2023-06-24 00:10:17,691] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:10:33,218] {logging_mixin.py:104} INFO - wrote file: m18a.html
+[2023-06-24 00:10:33,224] {logging_mixin.py:104} INFO - pulled: m18a.html
+[2023-06-24 00:10:33,226] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:10:48,431] {logging_mixin.py:104} INFO - wrote file: m18b.html
+[2023-06-24 00:10:48,433] {logging_mixin.py:104} INFO - pulled: m18b.html
+[2023-06-24 00:10:48,434] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:11:03,674] {logging_mixin.py:104} INFO - wrote file: m20a.html
+[2023-06-24 00:11:03,677] {logging_mixin.py:104} INFO - pulled: m20a.html
+[2023-06-24 00:11:03,678] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:11:19,022] {logging_mixin.py:104} INFO - wrote file: m22a.html
+[2023-06-24 00:11:19,025] {logging_mixin.py:104} INFO - pulled: m22a.html
+[2023-06-24 00:11:19,026] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:11:34,247] {logging_mixin.py:104} INFO - wrote file: m22b.html
+[2023-06-24 00:11:34,253] {logging_mixin.py:104} INFO - pulled: m22b.html
+[2023-06-24 00:11:34,256] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:11:49,485] {logging_mixin.py:104} INFO - wrote file: m22c.html
+[2023-06-24 00:11:49,490] {logging_mixin.py:104} INFO - pulled: m22c.html
+[2023-06-24 00:11:49,491] {logging_mixin.py:104} INFO - --- waiting ---
+[2023-06-24 00:12:04,508] {python.py:151} INFO - Done. Returned value was: None
+[2023-06-24 00:12:04,550] {taskinstance.py:1211} INFO - Marking task as SUCCESS. dag_id=assignment, task_id=task_one, execution_date=20230623T000000, start_date=20230624T000036, end_date=20230624T001204
+[2023-06-24 00:12:04,640] {taskinstance.py:1265} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-06-24 00:12:04,691] {local_task_job.py:151} INFO - Task exited with return code 0

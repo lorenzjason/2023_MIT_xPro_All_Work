@@ -1,0 +1,37 @@
+[2023-06-23 20:51:27,027] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: assignment.task_one 2023-06-23T20:48:40.522489+00:00 [None]>
+[2023-06-23 20:51:27,095] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: assignment.task_one 2023-06-23T20:48:40.522489+00:00 [None]>
+[2023-06-23 20:51:27,097] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-23 20:51:27,099] {taskinstance.py:1088} INFO - Starting attempt 1 of 1
+[2023-06-23 20:51:27,101] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-23 20:51:27,157] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): task_one> on 2023-06-23T20:48:40.522489+00:00
+[2023-06-23 20:51:27,166] {standard_task_runner.py:52} INFO - Started process 1132 to run task
+[2023-06-23 20:51:27,185] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'assignment', 'task_one', '2023-06-23T20:48:40.522489+00:00', '--job-id', '6', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/assignment.py', '--cfg-path', '/tmp/tmpf4gw78zk', '--error-file', '/tmp/tmpko36mjxz']
+[2023-06-23 20:51:27,190] {standard_task_runner.py:77} INFO - Job 6: Subtask task_one
+[2023-06-23 20:51:27,339] {logging_mixin.py:104} INFO - Running <TaskInstance: assignment.task_one 2023-06-23T20:48:40.522489+00:00 [running]> on host 7f7a4865b07a
+[2023-06-23 20:51:27,499] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=assignment
+AIRFLOW_CTX_TASK_ID=task_one
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-23T20:48:40.522489+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-06-23T20:48:40.522489+00:00
+[2023-06-23 20:51:28,643] {taskinstance.py:1501} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1157, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1331, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1361, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/assignment.py", line 86, in catalog
+    store(urldata, file)
+  File "/opt/airflow/dags/assignment.py", line 27, in store
+    datafile = open(file)
+FileNotFoundError: [Errno 2] No such file or directory: 'm1a.html'
+[2023-06-23 20:51:28,661] {taskinstance.py:1551} INFO - Marking task as FAILED. dag_id=assignment, task_id=task_one, execution_date=20230623T204840, start_date=20230623T205127, end_date=20230623T205128
+[2023-06-23 20:51:28,794] {local_task_job.py:151} INFO - Task exited with return code 1

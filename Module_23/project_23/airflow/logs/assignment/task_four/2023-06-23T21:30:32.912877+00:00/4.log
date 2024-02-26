@@ -1,0 +1,38 @@
+[2023-06-23 22:12:49,742] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: assignment.task_four 2023-06-23T21:30:32.912877+00:00 [queued]>
+[2023-06-23 22:12:49,799] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: assignment.task_four 2023-06-23T21:30:32.912877+00:00 [queued]>
+[2023-06-23 22:12:49,802] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-23 22:12:49,804] {taskinstance.py:1088} INFO - Starting attempt 4 of 4
+[2023-06-23 22:12:49,806] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-23 22:12:49,860] {taskinstance.py:1107} INFO - Executing <Task(PythonOperator): task_four> on 2023-06-23T21:30:32.912877+00:00
+[2023-06-23 22:12:49,871] {standard_task_runner.py:52} INFO - Started process 6948 to run task
+[2023-06-23 22:12:49,886] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'assignment', 'task_four', '2023-06-23T21:30:32.912877+00:00', '--job-id', '26', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/assignment.py', '--cfg-path', '/tmp/tmpl0xusjev', '--error-file', '/tmp/tmp944qtcvb']
+[2023-06-23 22:12:49,889] {standard_task_runner.py:77} INFO - Job 26: Subtask task_four
+[2023-06-23 22:12:50,026] {logging_mixin.py:104} INFO - Running <TaskInstance: assignment.task_four 2023-06-23T21:30:32.912877+00:00 [running]> on host 7f7a4865b07a
+[2023-06-23 22:12:50,180] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=assignment
+AIRFLOW_CTX_TASK_ID=task_four
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-23T21:30:32.912877+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-06-23T21:30:32.912877+00:00
+[2023-06-23 22:12:50,421] {logging_mixin.py:104} INFO - wrote file: titles_clean.json
+[2023-06-23 22:12:50,424] {taskinstance.py:1501} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1157, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1331, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1361, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 150, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 161, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/assignment.py", line 143, in clean
+    store_json(titles, 'titles_clean.json')
+  File "/opt/airflow/dags/assignment.py", line 127, in store_json
+    print('wrote file: ' + cleandatafile)
+TypeError: must be str, not _io.TextIOWrapper
+[2023-06-23 22:12:50,441] {taskinstance.py:1551} INFO - Marking task as FAILED. dag_id=assignment, task_id=task_four, execution_date=20230623T213032, start_date=20230623T221249, end_date=20230623T221250
+[2023-06-23 22:12:50,518] {local_task_job.py:151} INFO - Task exited with return code 1
